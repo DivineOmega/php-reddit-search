@@ -17,7 +17,7 @@ class RedditSearchResult implements SearchResultInterface
         $this->url = $item['data']['url'];
 
         if ($item['data']['selftext']) {
-            $this->description = html_entity_decode(substr($item['data']['selftext'], 0, 100) . '...', ENT_QUOTES | ENT_HTML5);
+            $this->description = html_entity_decode(substr($item['data']['selftext'], 0, 160) . '...', ENT_QUOTES | ENT_HTML5);
         } elseif ($item['data']['link_flair_text']) {
             $this->description = html_entity_decode($item['data']['link_flair_text'], ENT_QUOTES | ENT_HTML5);
         } else {
