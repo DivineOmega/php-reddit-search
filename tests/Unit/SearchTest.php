@@ -1,5 +1,7 @@
 <?php
 
+namespace DivineOmega\RedditSearch\Tests;
+
 use DivineOmega\BaseSearch\Interfaces\SearchResultInterface;
 use DivineOmega\RedditSearch\RedditSearcher;
 use DivineOmega\RedditSearch\RedditSearchResult;
