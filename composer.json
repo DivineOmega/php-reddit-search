@@ -20,5 +20,10 @@
         "psr-4": {
             "DivineOmega\\RedditSearch\\": "src/"
         }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "DivineOmega\\RedditSearch\\Tests\\": "tests/Unit/"
+        }
     }
 }
